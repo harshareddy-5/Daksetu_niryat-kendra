@@ -1,0 +1,330 @@
+{
+  "destinations": [
+    {
+      "code": "US",
+      "country": "United States",
+      "flag": "🇺🇸",
+      "zone": "Zone 5 - Americas",
+      "currency_symbol": "$",
+      "exchange_rate_inr": 86.5,
+      "services": {
+        "international_ems": {
+          "name": "India Post International EMS (Speed Post)",
+          "base_weight_g": 250,
+          "base_rate_inr": 1150,
+          "per_additional_250g_inr": 340,
+          "transit_days_min": 4,
+          "transit_days_max": 8,
+          "max_weight_kg": 30,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "air_parcel": {
+          "name": "India Post International Air Parcel",
+          "base_weight_g": 1000,
+          "base_rate_inr": 1850,
+          "per_additional_1000g_inr": 480,
+          "transit_days_min": 8,
+          "transit_days_max": 14,
+          "max_weight_kg": 20,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "tracked_packet": {
+          "name": "International Tracked Packet Service (ITPS)",
+          "base_weight_g": 100,
+          "base_rate_inr": 420,
+          "per_additional_100g_inr": 95,
+          "transit_days_min": 7,
+          "transit_days_max": 12,
+          "max_weight_kg": 2,
+          "tracking_available": true,
+          "insurance_available": false
+        }
+      },
+      "customs_threshold_usd": 800,
+      "customs_info": "Section 321 de minimis allows duty-free entry under $800. Fast customs clearance at JFK / ORD / LAX."
+    },
+    {
+      "code": "GB",
+      "country": "United Kingdom",
+      "flag": "🇬🇧",
+      "zone": "Zone 4 - Europe",
+      "currency_symbol": "£",
+      "exchange_rate_inr": 108.2,
+      "services": {
+        "international_ems": {
+          "name": "India Post International EMS (Speed Post)",
+          "base_weight_g": 250,
+          "base_rate_inr": 1050,
+          "per_additional_250g_inr": 310,
+          "transit_days_min": 4,
+          "transit_days_max": 7,
+          "max_weight_kg": 30,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "air_parcel": {
+          "name": "India Post International Air Parcel",
+          "base_weight_g": 1000,
+          "base_rate_inr": 1650,
+          "per_additional_1000g_inr": 430,
+          "transit_days_min": 7,
+          "transit_days_max": 12,
+          "max_weight_kg": 20,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "tracked_packet": {
+          "name": "International Tracked Packet Service (ITPS)",
+          "base_weight_g": 100,
+          "base_rate_inr": 380,
+          "per_additional_100g_inr": 85,
+          "transit_days_min": 6,
+          "transit_days_max": 10,
+          "max_weight_kg": 2,
+          "tracking_available": true,
+          "insurance_available": false
+        }
+      },
+      "customs_threshold_usd": 175,
+      "customs_info": "UK VAT applicable. Exporter must attach 3 copies of Commercial Invoice and CN23 Customs declaration."
+    },
+    {
+      "code": "AE",
+      "country": "United Arab Emirates",
+      "flag": "🇦🇪",
+      "zone": "Zone 2 - Gulf & Middle East",
+      "currency_symbol": "AED",
+      "exchange_rate_inr": 23.5,
+      "services": {
+        "international_ems": {
+          "name": "India Post International EMS (Speed Post)",
+          "base_weight_g": 250,
+          "base_rate_inr": 780,
+          "per_additional_250g_inr": 210,
+          "transit_days_min": 3,
+          "transit_days_max": 5,
+          "max_weight_kg": 30,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "air_parcel": {
+          "name": "India Post International Air Parcel",
+          "base_weight_g": 1000,
+          "base_rate_inr": 1250,
+          "per_additional_1000g_inr": 320,
+          "transit_days_min": 5,
+          "transit_days_max": 8,
+          "max_weight_kg": 20,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "tracked_packet": {
+          "name": "International Tracked Packet Service (ITPS)",
+          "base_weight_g": 100,
+          "base_rate_inr": 290,
+          "per_additional_100g_inr": 65,
+          "transit_days_min": 4,
+          "transit_days_max": 7,
+          "max_weight_kg": 2,
+          "tracking_available": true,
+          "insurance_available": false
+        }
+      },
+      "customs_threshold_usd": 270,
+      "customs_info": "India-UAE CEPA enables preferential 0% customs duty for Indian handicrafts with Certificate of Origin."
+    },
+    {
+      "code": "DE",
+      "country": "Germany (European Union)",
+      "flag": "🇩🇪",
+      "zone": "Zone 4 - Europe",
+      "currency_symbol": "€",
+      "exchange_rate_inr": 92.4,
+      "services": {
+        "international_ems": {
+          "name": "India Post International EMS (Speed Post)",
+          "base_weight_g": 250,
+          "base_rate_inr": 1100,
+          "per_additional_250g_inr": 320,
+          "transit_days_min": 5,
+          "transit_days_max": 8,
+          "max_weight_kg": 30,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "air_parcel": {
+          "name": "India Post International Air Parcel",
+          "base_weight_g": 1000,
+          "base_rate_inr": 1720,
+          "per_additional_1000g_inr": 450,
+          "transit_days_min": 8,
+          "transit_days_max": 13,
+          "max_weight_kg": 20,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "tracked_packet": {
+          "name": "International Tracked Packet Service (ITPS)",
+          "base_weight_g": 100,
+          "base_rate_inr": 395,
+          "per_additional_100g_inr": 88,
+          "transit_days_min": 7,
+          "transit_days_max": 11,
+          "max_weight_kg": 2,
+          "tracking_available": true,
+          "insurance_available": false
+        }
+      },
+      "customs_threshold_usd": 160,
+      "customs_info": "EU IOSS / Import VAT applicable. CE marking required for electricals, REACH for dyes/textiles."
+    },
+    {
+      "code": "AU",
+      "country": "Australia",
+      "flag": "🇦🇺",
+      "zone": "Zone 3 - Asia Pacific",
+      "currency_symbol": "A$",
+      "exchange_rate_inr": 55.8,
+      "services": {
+        "international_ems": {
+          "name": "India Post International EMS (Speed Post)",
+          "base_weight_g": 250,
+          "base_rate_inr": 1180,
+          "per_additional_250g_inr": 350,
+          "transit_days_min": 5,
+          "transit_days_max": 9,
+          "max_weight_kg": 30,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "air_parcel": {
+          "name": "India Post International Air Parcel",
+          "base_weight_g": 1000,
+          "base_rate_inr": 1890,
+          "per_additional_1000g_inr": 490,
+          "transit_days_min": 8,
+          "transit_days_max": 15,
+          "max_weight_kg": 20,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "tracked_packet": {
+          "name": "International Tracked Packet Service (ITPS)",
+          "base_weight_g": 100,
+          "base_rate_inr": 410,
+          "per_additional_100g_inr": 92,
+          "transit_days_min": 7,
+          "transit_days_max": 12,
+          "max_weight_kg": 2,
+          "tracking_available": true,
+          "insurance_available": false
+        }
+      },
+      "customs_threshold_usd": 650,
+      "customs_info": "India-Australia ECTA allows zero duty. Strict biosecurity: Wooden items require fumigation / phytosanitary proof."
+    },
+    {
+      "code": "JP",
+      "country": "Japan",
+      "flag": "🇯🇵",
+      "zone": "Zone 3 - Asia Pacific",
+      "currency_symbol": "¥",
+      "exchange_rate_inr": 0.58,
+      "services": {
+        "international_ems": {
+          "name": "India Post International EMS (Speed Post)",
+          "base_weight_g": 250,
+          "base_rate_inr": 980,
+          "per_additional_250g_inr": 290,
+          "transit_days_min": 4,
+          "transit_days_max": 7,
+          "max_weight_kg": 30,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "air_parcel": {
+          "name": "India Post International Air Parcel",
+          "base_weight_g": 1000,
+          "base_rate_inr": 1520,
+          "per_additional_1000g_inr": 390,
+          "transit_days_min": 6,
+          "transit_days_max": 11,
+          "max_weight_kg": 20,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "tracked_packet": {
+          "name": "International Tracked Packet Service (ITPS)",
+          "base_weight_g": 100,
+          "base_rate_inr": 350,
+          "per_additional_100g_inr": 78,
+          "transit_days_min": 5,
+          "transit_days_max": 9,
+          "max_weight_kg": 2,
+          "tracking_available": true,
+          "insurance_available": false
+        }
+      },
+      "customs_threshold_usd": 130,
+      "customs_info": "India-Japan CEPA benefits available. Exporter must ensure clean packaging and clear HS code tags."
+    },
+    {
+      "code": "CA",
+      "country": "Canada",
+      "flag": "🇨🇦",
+      "zone": "Zone 5 - Americas",
+      "currency_symbol": "C$",
+      "exchange_rate_inr": 62.0,
+      "services": {
+        "international_ems": {
+          "name": "India Post International EMS (Speed Post)",
+          "base_weight_g": 250,
+          "base_rate_inr": 1200,
+          "per_additional_250g_inr": 360,
+          "transit_days_min": 5,
+          "transit_days_max": 9,
+          "max_weight_kg": 30,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "air_parcel": {
+          "name": "India Post International Air Parcel",
+          "base_weight_g": 1000,
+          "base_rate_inr": 1920,
+          "per_additional_1000g_inr": 510,
+          "transit_days_min": 9,
+          "transit_days_max": 16,
+          "max_weight_kg": 20,
+          "tracking_available": true,
+          "insurance_available": true
+        },
+        "tracked_packet": {
+          "name": "International Tracked Packet Service (ITPS)",
+          "base_weight_g": 100,
+          "base_rate_inr": 435,
+          "per_additional_100g_inr": 98,
+          "transit_days_min": 8,
+          "transit_days_max": 14,
+          "max_weight_kg": 2,
+          "tracking_available": true,
+          "insurance_available": false
+        }
+      },
+      "customs_threshold_usd": 20,
+      "customs_info": "CBSA requires detailed item description and HS code. Low de minimis (CAD 20)."
+    }
+  ],
+  "postal_rules": {
+    "max_length_cm": 150,
+    "max_length_plus_girth_cm": 300,
+    "max_weight_ems_kg": 30,
+    "max_weight_air_parcel_kg": 20,
+    "max_weight_tracked_packet_kg": 2,
+    "volumetric_divisor": 5000,
+    "fuel_surcharge_percent": 8.5,
+    "postal_gst_percent": 18.0,
+    "insurance_rate_per_1000_inr": 15.0
+  }
+}
