@@ -14,11 +14,14 @@ def start_fullstack():
     print("   Dak Ghar Niryat Kendra AI Full-Stack Launcher")
     print("===================================================================")
 
+    is_win = sys.platform == "win32"
+
     # 1. Start Backend in background
     print("\n[1/3] Starting FastAPI Backend on http://localhost:8000 ...")
     backend_proc = subprocess.Popen(
         [sys.executable, "run.py"],
-        cwd=backend_dir
+        cwd=backend_dir,
+        shell=is_win
     )
 
     # Wait 2 seconds for backend to start
@@ -26,25 +29,28 @@ def start_fullstack():
 
     # 2. Start Frontend in background
     print("\n[2/3] Starting Vite Frontend on http://localhost:5173 ...")
-    # On Windows npm is npm.cmd
-    npm_cmd = "npm.cmd" if sys.platform == "win32" else "npm"
+    npm_cmd = "npm.cmd" if is_win else "npm"
     frontend_proc = subprocess.Popen(
         [npm_cmd, "run", "dev"],
-        cwd=frontend_dir
+        cwd=frontend_dir,
+        shell=is_win
     )
 
     time.sleep(2)
 
     # 3. Open Browser
     print("\n[3/3] Opening browser at http://localhost:5173 ...")
-    webbrowser.open("http://localhost:5173")
+    try:
+        webbrowser.open("http://localhost:5173")
+    except Exception:
+        pass
 
     print("\n===================================================================")
     print(" DAKSETU IS RUNNING LIVE!")
     print(" - Frontend Kiosk: http://localhost:5173")
     print(" - Backend API:    http://localhost:8000")
     print(" - Swagger Docs:   http://localhost:8000/docs")
-    print(" Press Ctrl+C to stop both servers.")
+    print(" Press Ctrl+C in this terminal to stop both servers.")
     print("===================================================================")
 
     try:
@@ -52,8 +58,11 @@ def start_fullstack():
         frontend_proc.wait()
     except KeyboardInterrupt:
         print("\nStopping DakSetu servers...")
-        backend_proc.terminate()
-        frontend_proc.terminate()
+        try:
+            backend_proc.terminate()
+            frontend_proc.terminate()
+        except Exception:
+            pass
         print("Done.")
 
 if __name__ == "__main__":
